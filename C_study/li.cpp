@@ -11,6 +11,7 @@ int main(void){
         scanf("%d",&p);
         v[i] = p;
     }
+    //表示
     printf("{");
     for(int i=0; i<a-1; i++){
         printf("%d, ",v[i]);
