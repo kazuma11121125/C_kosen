@@ -1,10 +1,10 @@
-# 0 "/home/kazuma1112/ドキュメント/C_kosen/C_study/kak.cpp"
+# 0 "/home/kazuma1112/ドキュメント/C_kosen/C_study/mi.cpp"
 # 1 "/home/kazuma1112/ドキュメント/C_kosen/C_study//"
 # 0 "<built-in>"
 # 0 "<command-line>"
 # 1 "/usr/include/stdc-predef.h" 1 3 4
 # 0 "<command-line>" 2
-# 1 "/home/kazuma1112/ドキュメント/C_kosen/C_study/kak.cpp"
+# 1 "/home/kazuma1112/ドキュメント/C_kosen/C_study/mi.cpp"
 # 1 "/usr/include/stdio.h" 1 3 4
 # 27 "/usr/include/stdio.h" 3 4
 # 1 "/usr/include/x86_64-linux-gnu/bits/libc-header-start.h" 1 3 4
@@ -903,36 +903,33 @@ extern int __uflow (FILE *);
 extern int __overflow (FILE *, int);
 # 902 "/usr/include/stdio.h" 3 4
 }
-# 2 "/home/kazuma1112/ドキュメント/C_kosen/C_study/kak.cpp" 2
+# 2 "/home/kazuma1112/ドキュメント/C_kosen/C_study/mi.cpp" 2
+
+ 
+# 3 "/home/kazuma1112/ドキュメント/C_kosen/C_study/mi.cpp"
+int main()
+ {
+   int n;
+   int i,j;
+   puts("自然数を入力してください");
+   printf("自然数:");
+   scanf("%d",&n);
+
+   if(n>0){
+   for(i=1;i<=n;i++) {
+      for (j=0;j<=i;j++){
+          putchar(' ');
+      }
+      for (j=n;j<=(j*2)-i;j--){
+         printf("*");
+      }
 
 
 
-# 4 "/home/kazuma1112/ドキュメント/C_kosen/C_study/kak.cpp"
-int tensu[5];
 
-int top(void);
+      putchar('\n');
 
-int main(void)
-{
-    int i;
-    printf("%d人の人数を入力してください。\n",5);
-    for (i = 0; i < 5; i++){
-        printf("%d:", i+1);
-        scanf("%d",&tensu[i]);
+      }
     }
-    printf("最高点=%d\n",top());
     return 0;
-}
-
-int top(void)
-{
-    int i;
-    int max = tensu[0];
-
-    for (i = 0; i < 5; i++){
-        if (tensu[i] > max){
-            max = tensu[i];
-        }
-    }
-    return max;
 }
